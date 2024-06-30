@@ -725,12 +725,12 @@ div#fp-nav li:hover .fp-tooltip::before {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   line-height: 30px;
-  font-weight: 500;
   letter-spacing: 1px;
-  color: #555555;
   padding: 40px 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  color: rgb(128, 128, 128) !important;
+  font-weight: 200 !important;
 }
 .main-menu > ul > li.menu-item-has-children > a::after {
   content: "\f107";
