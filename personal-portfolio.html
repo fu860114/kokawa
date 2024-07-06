@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/kokawa-LOGO.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/kokawa-LOGO2.png">
 
     <!-- CSS
 	============================================ -->
@@ -31,7 +31,16 @@
 
     <!-- Modernizer JS -->
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&display=swap" rel="stylesheet">
     <style>
+        @font-face {
+            font-family: adobe-ming-std, sans-serif;
+            src: url('./assets/fonts/ADOBEMINGSTD-LIGHT.OTF') format("truetype"),
+                /* url('../fonts/Helvetica.ttf') format("truetype"),
+                url('../fonts/Helvetica.eot') format("embedded-opentype"); */
+        }
+
         h2 {
             font-size: 25px !important;
             color: rgb(128, 128, 128) !important;
@@ -67,7 +76,6 @@
 
         .mywh {
             height: 100vh !important;
-            /* outline: 1px solid red !important; */
         }
 
         h1,
@@ -164,6 +172,9 @@
         }
 
         .ver-write-mode {
+            font-family: adobe-ming-std, sans-serif;
+            font-style: normal;
+            font-weight: 300;
             -webkit-writing-mode: vertical-lr;
             margin: 0 3vw;
             /* writing-mode: vertical-lr */
@@ -247,6 +258,12 @@
         .bg-grey {
             background-color: white !important;
         }
+
+        @media only screen and (min-width: 768px) {
+            .myWorkFlow {
+                height: 100vh !important;
+            }
+        }
     </style>
 </head>
 
@@ -269,10 +286,10 @@
                     <div class="header-menu d-lg-flex justify-content-center col-lg-8 d-none">
                         <nav class="main-menu">
                             <ul>
-                                <li><a href="about.html">HOME</a></li>
-                                <li><a href="about.html">RESIDENTIAL</a></li>
-                                <li><a href="about.html">COMMERCIAL</a></li>
-                                <li><a href="#myContact">CONTACT</a></li>
+                                <li><a href="#">HOME</a></li>
+                                <li><a href="#">RESIDENTIAL</a></li>
+                                <li><a href="#">COMMERCIAL</a></li>
+                                <li><a href="#">CONTACT</a></li>
                                 <!-- <li class="menu-item-has-children active"><a href="index.html">HOME</a>
                                     <ul class="sub-menu">
                                         <li class="active"><a href="index.html">Home Default</a></li>
@@ -351,12 +368,12 @@
                     </div>
 
                     <!-- Header Socail -->
-                    <!-- <div class="header-social d-flex align-items-center justify-content-end col-lg-2 col-6">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    <div class="header-social d-flex align-items-center justify-content-end col-lg-2 col-6">
+                        <!-- <a href="#"><i class="fa fa-facebook"></i></a>
                         <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="#"><i class="fa fa-dribbble"></i></a> -->
                         <button class="side-header-toggle d-block d-lg-none   ml-20"><span></span></button>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -373,8 +390,8 @@
                 <button class="side-header-close d-block d-lg-none"><span></span></button>
                 <!-- Side Header Logo Start -->
                 <div class="side-header-logo pt-120 pt-lg-80 pt-md-80 pt-sm-80 pt-xs-50">
-                    <a href="index.html"><img src="assets/images/logo.png" alt=""><img
-                            src="assets/images/light-logo.png" class="light-logo" alt=""></a>
+                    <a href="#"><img src="assets/images/kokawa-LOGO2.png" alt=""><img
+                            src="assets/images/kokawa-LOGO2.png" class="light-logo" alt=""></a>
                 </div>
                 <!-- Side Header Logo End -->
 
@@ -382,10 +399,10 @@
                 <div class="side-header-menu">
                     <nav id="side-menu" class="side-menu">
                         <ul>
-                            <li><a href="about.html">HOME</a></li>
-                            <li><a href="about.html">RESIDENTIAL</a></li>
-                            <li><a href="about.html">COMMERCIAL</a></li>
-                            <li><a href="#myContact">CONTACT</a></li>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">RESIDENTIAL</a></li>
+                            <li><a href="#">COMMERCIAL</a></li>
+                            <li><a href="#">CONTACT</a></li>
                             <!-- <li class="menu-item-has-children active"><a href="index.html">HOME</a>
                                 <ul class="side-sub-menu">
                                     <li class="active"><a href="index.html">Home Default</a></li>
@@ -467,25 +484,25 @@
 
                     <!-- Side Header Contact Information -->
                     <div class="side-header-contact-info">
-                        <p><a href="#">+012 345 6789</a></p>
-                        <p><a href="#">info@example.com</a></p>
+                        <p><a href="#">0988500189</a></p>
+                        <p><a href="#">seanruan62@gmail.com</a></p>
                     </div>
 
                     <!-- Side Header Social -->
-                    <div class="side-header-social">
+                    <!-- <div class="side-header-social">
                         <a href="#"><i class="fa fa-facebook"></i></a>
                         <a href="#"><i class="fa fa-twitter"></i></a>
                         <a href="#"><i class="fa fa-dribbble"></i></a>
-                    </div>
+                    </div> -->
 
                     <!-- Side Header Copyright -->
-                    <div class="side-header-copyright">
+                    <!-- <div class="side-header-copyright">
                         <p>&copy;
                             <script>
                                 document.write(new Date().getFullYear() + ' ');
                             </script> MINIMAU. ALL RIGHT RESERVED
                         </p>
-                    </div>
+                    </div> -->
 
                 </div>
                 <!-- Side Header Footer End -->
@@ -530,7 +547,7 @@
         <div class="section pt-120 pt-lg-80 pt-md-80 pt-sm-80 pt-xs-50 pb-120 pb-lg-80 pb-md-80 pb-sm-80 pb-xs-50 bg-grey"
             style="padding-top: 20vh!important;">
             <div class="container">
-                <div class="row col-12 pb-120 pb-lg-80 pb-md-80 pb-sm-80 pb-xs-50">
+                <div class="row col-12 pb-120 pb-lg-80 pb-md-80 pb-sm-80 pb-xs-50" style="margin: auto;">
                     <h4 class="sub-title onlyfw200" style="text-align: center;">在屬於你的島嶼上，找到川流不息的美</h4>
                     <h4 class="sub-title onlyfw200" style="text-align: center;">On your own island, discover the
                         ceaseless flow of
@@ -757,7 +774,7 @@
         <!-- Content Body End -->
 
         <!-- Content Body Start -->
-        <div class="bg-grey section service-bg mywh d-flex"
+        <div class="bg-grey section service-bg d-flex myWorkFlow"
             style="flex-direction: column;justify-content: space-evenly;">
             <div class="section-wrap section pt-lg-80 pt-md-80 pt-sm-80 pt-xs-50 pb-lg-80 pb-md-80 pb-sm-80 pb-xs-50">
                 <div class="container ">
@@ -865,24 +882,23 @@
                     </div>
                 </div>
                 <div class="d-flex" style="width: 100%; flex-direction: column; align-items: center;">
-                    <div class="contact-info col-4">
+                    <div class="contact-info" style="margin: auto;">
                         <ul>
                             <li><span class="mygreycolor">mob</span>0988500189</li>
                             <li><span class="mygreycolor">mail</span>seanruan62@gmail.com</li>
                             <li>新北市中和區興南路一段135巷10弄2號</li>
                         </ul>
                         <!-- Footer Section Start -->
-                        <div class="footer-section section position-static pt-30 pb-30 bg-grey">
-                            <div class="container-fluid">
-                                <div class="row align-items-center">
+                        <div class="footer-section section position-static bg-grey" style="margin-top: 30px;">
+                            <div class="row align-items-center">
 
-                                    <div class="footer-copyright text-center col-12">
-                                        <p>&copy;
-                                            <script>
-                                                document.write(new Date().getFullYear() + ' ');
-                                            </script> KOKAWA. ALL RIGHT RESERVED
-                                        </p>
-                                    </div>
+                                <div class="footer-copyright text-center col-12"
+                                    style="padding-right: 0px;padding-left: 0px;">
+                                    <p>&copy;
+                                        <script>
+                                            document.write(new Date().getFullYear() + ' ');
+                                        </script> KOKAWA. ALL RIGHT RESERVED
+                                    </p>
 
                                 </div>
                             </div>
