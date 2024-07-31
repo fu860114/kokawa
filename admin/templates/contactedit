@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+
+{# 功能標題的 FA ICON #}
+{% block fa_title_icon %}fa fa-building-o{% endblock %}
+{# 功能標題 - 中文 #}
+{% block c_title %}首頁輪播{% endblock %}
+{# 功能標題 - 英文 #}
+{% block e_title %}<i class="fa fa-caret-right" aria-hidden="true"></i>編輯{% endblock %}
+{# 功能路徑 #}
+{% block document_path %} > 首頁輪播{% endblock %}
+
+{# 主頁面 #}
+{% block mainblock %}
+
+<script type="text/javascript" src="include/ckeditor/ckeditor.js"></script>	
+
+<section class="content">
+
+    <form name="EditForm" id="EditForm" method="POST" action="{{cur_file}}?flag=editsave" class="form-horizontal"  enctype="multipart/form-data" >
+        <input type="hidden" name="serno" value="{{id}}">
+        <div class="box box-primary box-solid">
+            <div class="box-header">
+                <h3 class="box-title">聯絡資料</h3>
+            </div>
+            <div class="box-body">
+                <div class="col-xs-12">
+
+                    <div class="form-group">
+                        <label for="a" class="col-xs-12 col-sm-3 control-label">留言類別</label>
+                        <div class="col-sm-8 col-lg-6 col-xs-12">
+							<input type="text" class="form-control" name="msgtype" value="{{ data.msgtype }}" readonly>
+                        </div>
+                    </div>	
+
+                    <div class="form-group">
+                        <label for="a" class="col-xs-12 col-sm-3 control-label">姓名</label>
+                        <div class="col-sm-8 col-lg-6 col-xs-12">
+							<input type="text" class="form-control" name="name" value="{{ data.name }}" readonly>
+                        </div>
+                    </div>				
+					
+                    <div class="form-group">
+                        <label for="a" class="col-xs-12 col-sm-3 control-label">電子郵件</label>
+                        <div class="col-sm-8 col-lg-6 col-xs-12">
+							<input type="text" class="form-control" name="email" value="{{ data.email }}" readonly>
+                        </div>
+                    </div>	 		
+
+                    <div class="form-group">
+                        <label for="a" class="col-xs-12 col-sm-3 control-label">連絡電話</label>
+                        <div class="col-sm-8 col-lg-6 col-xs-12">
+							<input type="text" class="form-control" name="phone" value="{{ data.phone }}" readonly>
+                        </div>
+                    </div>	
+			
+                    <div class="form-group">
+                        <label for="a" class="col-xs-12 col-sm-3 control-label">訊息</label>
+                        <div class="col-sm-8 col-lg-6 col-xs-12">
+                            <textarea type="text" class="form-control" name="msg" readonly>{{ data.msg }}</textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="a" class="col-xs-12 col-sm-3 control-label">訊息時間</label>
+                        <div class="col-sm-8 col-lg-6 col-xs-12">
+							<input type="text" class="form-control" name="bdate" value="{{ data.bdate }}" readonly>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="a" class="col-xs-12 col-sm-3 control-label">Google map</label>
+                        <div class="col-sm-8 col-lg-6 col-xs-12">
+                            <input type="text" class="form-control" name="gmap" value="{{ data.gmap }}">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="box">
+            <div class="box-body">
+                <div class="text-center">
+                    <button type="button" class="btn btn-default" onclick="location.href='{{cur_file}}';"><i class="fa fa-reply"></i> 返回前頁</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+</section>
+
+{% include "extrajs.html" %}
+
+{% endblock %}

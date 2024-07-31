@@ -1,0 +1,43 @@
+
+{% extends "base.html" %}
+
+{# 功能標題的 FA ICON #}
+{% block fa_title_icon %}fa fa-code-fork{% endblock %}
+{# 功能標題 - 中文 #}
+{% block c_title %}系統更新紀錄{% endblock %}
+{# 功能標題 - 英文 #}
+{% block e_title %}Dashboard{% endblock %}
+{# 功能路徑 #}
+{% block document_path %} > 系統更新紀錄{% endblock %}
+
+{# 主頁面 #}
+{% block mainblock %}
+
+    <div class="row">
+        <div class="col-xs-12">
+            <!-- Box Comment -->
+            <div class="box box-widget ">
+                <div class="box-header with-border">
+                    <div class="user-block">
+                        <span><h4><i class="glyphicon glyphicon-expand"></i> 歡迎進入後台</h4></span>
+                    </div>
+                    <!-- /.user-block -->
+                    <div class="box-tools">
+                        <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                    </div>
+                    <!-- /.box-tools -->
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+
+                        
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </div>
+    </div>
+
+    {% include "extrajs.html" %}
+	
+{% endblock %}
