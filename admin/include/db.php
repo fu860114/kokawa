@@ -6,7 +6,7 @@ if (!defined('Usable')) {
 
 //��Ʈw�]�w
 $mysql_server   = "localhost";
-$mysql_user     = "kokawa";
+$mysql_user     = "kokawaco_kokawa";
 $mysql_password = "kokawaco_kokawa";
 $mysql_table    = "kokawaco_kokawa";  // ���եθ�Ʈw 
 //$mysql_db       = "rentcar";     // ���վ��θ�Ʈw 
