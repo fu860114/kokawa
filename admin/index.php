@@ -54,7 +54,7 @@
 
     <div class="login-box">
         <div class="login-logo">
-            <img src="../assets/images/kokawa-LOGO2.png" alt="">
+            <img style="width: 100px;" src="../assets/images/kokawa-LOGO2.png" alt="">
         </div>
         <!-- /.login-logo -->
         <div class="login-box-body">
