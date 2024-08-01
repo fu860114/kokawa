@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>spa admin</title>
+    <title>kokawa admin</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
@@ -54,12 +54,12 @@
 
     <div class="login-box">
         <div class="login-logo">
-            <!-- <img src="include/images/nav_logo_small.png" alt=""> -->
+            <img src="../assets/images/kokawa-LOGO2.png" alt="">
         </div>
         <!-- /.login-logo -->
         <div class="login-box-body">
             <h4 class="login-box-msg">登入</h4>
-            <p class="login-box-msg">歡迎使用 spa後台作業系統 !</p>
+            <p class="login-box-msg">歡迎使用 kokawa後台作業系統 !</p>
 
 
             <form method="post" name="loginform" action="entry.php" class="form">
