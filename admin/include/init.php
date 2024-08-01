@@ -33,7 +33,7 @@ if (!defined('DS')) {
 //Path  正式機環境 跟 開發測試環境不同 路徑要設對
 
 //Path
-define('Root_Path',         '/home/kokawaco/public_html/admin');
+define('Root_Path',         '/home/kokawaco/public_html/admin/');
 define('Upload_Path',       '/home/kokawaco/public_html/img/');
 define('UploadDoc_Path',    '/home/kokawaco/public_html/upload/');
 define('Root_Url',          'https://rental.yfmotor.com.tw/new2/');
