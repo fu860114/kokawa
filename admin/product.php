@@ -25,8 +25,8 @@
 	$_Table_Main   = "product";		    //本檔案主資料庫
 	$_File_Name    = basename(__FILE__);          //目前檔名
 
-	$twig->addGlobal('function_title', "產品頁面");
-	$twig->addGlobal('document_path', "產品頁面");
+	$twig->addGlobal('function_title', "作品集");
+	$twig->addGlobal('document_path', "作品集");
 	$twig->addGlobal('cur_file', basename(__file__));
 
 
@@ -142,7 +142,7 @@
 	/*------------------------------------------------------------------------------------------------------------*/ else {
 		$sqlstr = "select * from {$_Table_Main} ";
 		$list = $g_db->getAll($sqlstr);
-		
+
 		//補名稱
 		for ($i = 0; $i < sizeof($list); $i++) {
 			$bid = $list[$i]["bid"];

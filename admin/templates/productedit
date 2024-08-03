@@ -21,25 +21,34 @@
         <input type="hidden" name="serno" value="{{id}}">
         <div class="box box-primary box-solid">
             <div class="box-header">
-                <h3 class="box-title">頁面內容</h3>
+                <h3 class="box-title">編輯內容</h3>
             </div>
             <div class="box-body">
                 <div class="col-xs-12">
 
                     <div class="form-group">
-                        <label for="a" class="col-xs-12 col-sm-3 control-label">名稱</label>
+                        <label for="a" class="col-xs-12 col-sm-3 control-label">作品標題</label>
                         <div class="col-sm-8 col-lg-6 col-xs-12">
                             <input type="text" class="form-control" name="name" value="{{ data.name }}">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="a" class="col-xs-12 col-sm-3 control-label">品牌</label>
-                        <select name="bid">
-                            <option value=0>請選擇</option>
-                            {% for pdata in pdlist %}
-                                 <option value="{{ pdata.serno }}" {% if pdata.serno==data.brand %}selected{% endif %} >{{ pdata.brand }}</option>
-                            {% endfor %}
-                         </select><br>
+                        <label for="a" class="col-xs-12 col-sm-3 control-label">作品用料</label>
+                        <div class="col-sm-8 col-lg-6 col-xs-12">
+                            <input type="text" class="form-control" name="name" value="{{ data.material }}">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="a" class="col-xs-12 col-sm-3 control-label">分類</label>
+                        <div class="col-sm-8 col-lg-6 col-xs-12">
+                            <select class="form-control" name="bid" style="padding-left: 15px;margin-left: 15px;">
+                                <option value=0>請選擇</option>
+                                {% for pdata in pdlist %}
+                                <option value="{{ pdata.serno }}" {% if pdata.serno==data.brand %}selected{% endif %}>{{
+                                    pdata.brand }}</option>
+                                {% endfor %}
+                            </select><br>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="a" class="col-xs-12 col-sm-3 control-label">排序</label>

@@ -33,19 +33,21 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <table class="dataTable_style1 table table-bordered table-striped dataTable no-footer"
-                                id="DataTables_Table_0"  role="grid"
-                                aria-describedby="DataTables_Table_0_info">
+                                id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
                                 <thead>
                                     <tr role="row">
                                         <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
-                                            colspan="1" aria-label="名稱: 升冪排列">名稱</th>
+                                            colspan="1" aria-label="名稱: 升冪排列">作品標題</th>
                                         <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
-                                            colspan="1" aria-label="品牌: 升冪排列">品牌</th>
+                                            colspan="1" aria-label="名稱: 升冪排列">作品用料</th>
+                                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
+                                            colspan="1" aria-label="品牌: 升冪排列">分類</th>
                                         <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
                                             colspan="1" aria-label="排序: 升冪排列">排序</th>
                                         <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1"
                                             colspan="1" aria-label="照片: 升冪排列">照片</th>
-										<th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="編輯: 降冪排列" aria-sort="ascending">編輯</th>
+                                        <th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_0"
+                                            rowspan="1" colspan="1" aria-label="編輯: 降冪排列" aria-sort="ascending">編輯</th>
                                     </tr>
                                 </thead>
 
@@ -53,6 +55,7 @@
                                     {% for data in list %}
                                     <tr>
                                         <td class="">{{ data.name }}</td>
+                                        <td class="">{{ data.material }}</td>
                                         <td class="">{{ data.brand }}</td>
                                         <td class="">{{ data.showseries }}</td>
                                         <td class="">{{ data.iconpic }}</td>

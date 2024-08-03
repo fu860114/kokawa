@@ -21,8 +21,8 @@
 	$_Table_Main   = "brand";		    //本檔案主資料庫
 	$_File_Name    = basename(__FILE__);          //目前檔名
 		
-	$twig->addGlobal('function_title', "商品品牌" );
-	$twig->addGlobal('document_path', "商品品牌" );	
+	$twig->addGlobal('function_title', "作品分類" );
+	$twig->addGlobal('document_path', "作品分類" );	
 	$twig->addGlobal('cur_file', basename(__file__) );
 
 	
