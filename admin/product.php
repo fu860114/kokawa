@@ -76,7 +76,8 @@
 		$serno = $_POST["serno"];
 
 		$data = array();
-		$data["name"] = str_replace("'", "\'", $_POST["name"]);
+		// $data["name"] = str_replace("'", "\'", $_POST["name"]);
+		$data["name"] =  $_POST["name"];
 		$data["bid"] =  $_POST["bid"];
 		$data["showseries"]  = $_POST["showseries"];
 		$data["material"]  = $_POST["material"];
