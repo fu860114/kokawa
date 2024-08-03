@@ -45,7 +45,7 @@
                                 <option value=0>請選擇</option>
                                 {% for pdata in pdlist %}
                                 <option value="{{ pdata.serno }}" {% if pdata.serno==data.brand %}selected{% endif %}>{{
-                                    pdata.brand }}</option>
+                                    pdata.brandchinese }}</option>
                                 {% endfor %}
                             </select><br>
                         </div>
