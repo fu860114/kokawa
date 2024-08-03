@@ -36,9 +36,9 @@ if (!defined('DS')) {
 define('Root_Path',         '/home/kokawaco/public_html/admin/');
 define('Upload_Path',       '/home/kokawaco/public_html/img/');
 define('UploadDoc_Path',    '/home/kokawaco/public_html/upload/');
-define('Root_Url',          'https://rental.yfmotor.com.tw/new2/');
-define('Upload_Url',        'https://rental.yfmotor.com.tw/new2/upload/');
-define('Https_Url',         'https://rental.yfmotor.com.tw/new2');
+define('Root_Url',          'https://kokawa.com.tw/');
+define('Upload_Url',        'https://kokawa.com.tw/upload/');
+define('Https_Url',         'https://kokawa.com.tw/new2');
 
 
 //Vars	
