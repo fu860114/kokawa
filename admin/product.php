@@ -79,7 +79,8 @@
 		$data["name"] = str_replace("'", "\'", $_POST["name"]);
 		$data["bid"] =  $_POST["bid"];
 		$data["showseries"]  = $_POST["showseries"];
-
+		$data["material"]  = $_POST["materials"];
+		$data["category"]  = $_POST["category"];
 
 		if ($_FILES["iconpic"]["name"] != "") {
 			$data['iconpic'] = "product-" . date("Ymdhis") . substr($_FILES["iconpic"]["name"], strrpos($_FILES["iconpic"]["na me"], '.'));
