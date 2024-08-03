@@ -24,6 +24,7 @@ $pageno = $CurrentPageNO - 1;
 $startuprow = $pageno * $_PageShowNum;
 $EndRec = $startuprow + $_PageShowNum;
 ?>
+
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -427,6 +428,8 @@ $EndRec = $startuprow + $_PageShowNum;
                         <div class="work-div-shadow"></div>
                     </div>
                 </div>
+
+
             </div>
         </div>
         <!-- Content Body End -->
@@ -507,6 +510,7 @@ $EndRec = $startuprow + $_PageShowNum;
         <!-- Content Body End -->
 
         <?php require_once './tpl/footer.php' ?>
+
         <!-- Footer Section Start -->
         <!-- <div class="footer-section section position-static pt-30 pb-30 bg-grey">
             <div class="container-fluid">
