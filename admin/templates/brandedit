@@ -34,7 +34,7 @@
                     <div class="form-group">
                         <label for="a" class="col-xs-12 col-sm-3 control-label">分類中文名稱</label>
                         <div class="col-sm-8 col-lg-6 col-xs-12">
-                            <input type="text" class="form-control" name="brand" value="{{ data.brandchinese }}">
+                            <input type="text" class="form-control" name="brandchinese" value="{{ data.brandchinese }}">
                         </div>
                     </div>
 
