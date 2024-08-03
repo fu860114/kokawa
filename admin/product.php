@@ -79,7 +79,7 @@
 		$data["name"] = str_replace("'", "\'", $_POST["name"]);
 		$data["bid"] =  $_POST["bid"];
 		$data["showseries"]  = $_POST["showseries"];
-		$data["material"]  = $_POST["materials"];
+		$data["material"]  = $_POST["material"];
 		$data["category"]  = $_POST["category"];
 
 		if ($_FILES["iconpic"]["name"] != "") {
