@@ -253,6 +253,11 @@ $EndRec = $startuprow + $_PageShowNum;
             letter-spacing: 5px;
         }
 
+
+        .design-work {
+            object-fit: contain;
+        }
+
         @-webkit-keyframes fadeInOut {
             0% {
                 opacity: 0;
@@ -370,7 +375,7 @@ $EndRec = $startuprow + $_PageShowNum;
                         <div class="col-md-9 col-12 work-div">
                             <div class="portfolio-item">
                                 <a href="portfolio-details.html" class="portfolio-image">
-                                    <img src="assets/images/interior-design.jpeg" class="design-work" alt="">
+                                    <img src="assets/images/LINE_ALBUM_240803_0.jpg" class="design-work" alt="">
                                 </a>
                                 <!-- <div class="portfolio-content">
                                 <h4 class="title"><a href="portfolio-details.html">Oil Paint Dog</a></h4>
