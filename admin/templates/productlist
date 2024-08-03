@@ -58,7 +58,7 @@
                                         <td class="">{{ data.material }}</td>
                                         <!-- <td class="">{{ data.category }}</td> -->
 
-                                        {% for pdata in pdlist %}
+                                        {% for pdata in categorylist %}
                                         <td class="" {% if pdata.serno==data.category %}{% endif %}>{{
                                             pdata.brandchinese }}</td>
                                         {% endfor %}

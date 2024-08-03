@@ -145,6 +145,9 @@
 		$sqlstr = "select * from {$_Table_Main} ";
 		$list = $g_db->getAll($sqlstr);
 
+		$categorysqlstr = "select * from 'brand' ";
+		$categorylist = $g_db->getAll($categorysqlstr);
+
 		//補名稱
 		for ($i = 0; $i < sizeof($list); $i++) {
 			$bid = $list[$i]["bid"];
