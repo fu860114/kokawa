@@ -56,15 +56,13 @@
                                     <tr>
                                         <td class="">{{ data.name }}</td>
                                         <td class="">{{ data.material }}</td>
-                                        <!-- <td class="">{{ data.category }}</td> -->
+                                        <td class="">{{ data.category }}</td>
 
-                                        {% for pdata in categorylist %}
+                                        <!-- {% for pdata in categorylist %}
                                         <td class="" {% if pdata.serno==data.category %}{% endif %}>{{
                                             pdata.brandchinese }}</td>
-                                        {% endfor %}
-                                        <!-- <option value="{{ pdata.serno }}" {% if pdata.serno==data.brand %}selected{%
-                                            endif %}>{{
-                                            pdata.brand }}</option> -->
+                                        {% endfor %} -->
+                                      
                                         <td class="">{{ data.showseries }}</td>
                                         <td class="">{{ data.iconpic }}</td>
                                         <td class="">
