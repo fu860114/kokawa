@@ -1,30 +1,3 @@
-<?
-
-ini_set('display_errors', 'On');
-define('Usable', true);
-
-//Define DIRECTORY_SEPARATOR
-if (!defined('DS')) {
-    define('DS', DIRECTORY_SEPARATOR);
-}
-
-include_once('../config.php');
-
-$_PageShowNum = 12;
-if ($_PageShowNum == "" or $_PageShowNum == 0) {
-    $_PageShowNum = 9;
-}
-
-$CurrentPageNO = $_GET["page"];
-if ($CurrentPageNO == "") {
-    $CurrentPageNO = 1;
-}
-$pageno = $CurrentPageNO - 1;
-
-$startuprow = $pageno * $_PageShowNum;
-$EndRec = $startuprow + $_PageShowNum;
-$bid = $_GET['bid'];
-?>
 <!-- Header Section Start -->
 <div class="header-section section">
     <div class="container-fluid">
