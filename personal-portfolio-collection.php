@@ -8,7 +8,7 @@ if (!defined('DS')) {
     define('DS', DIRECTORY_SEPARATOR);
 }
 
-include_once('../config.php');
+include_once('config.php');
 
 $_PageShowNum = 12;
 if ($_PageShowNum == "" or $_PageShowNum == 0) {
@@ -25,6 +25,7 @@ $startuprow = $pageno * $_PageShowNum;
 $EndRec = $startuprow + $_PageShowNum;
 $bid = $_GET['bid'];
 $category = $_GET['category'];
+$category = $_GET['brand'];
 ?>
 
 <!doctype html>
@@ -325,14 +326,13 @@ $category = $_GET['category'];
 <body>
     <div class="main-wrapper p-0">
 
-        <?php require_once './tpl/headind.php' ?>
+        <?php include('./tpl/head.php'); ?>
 
         <!-- Content Body Start -->
         <div class="section pt-120 pt-lg-80 pt-md-80 pt-sm-80 pt-xs-50 pb-120 pb-lg-80 pb-md-80 pb-sm-80 pb-xs-50 bg-grey" style="padding-top: 40vh!important;">
             <div class="container">
                 <?
                 $sqlstr = "SELECT * FROM `brand` where category={$category} order by showseries";
-
                 // if ($bid === "0") {
                 //     $sqlstr = "SELECT * FROM `product` order by showseries";
                 // }
@@ -340,8 +340,9 @@ $category = $_GET['category'];
                 $list = $g_db->getAll($sqlstr, $sqlary);
                 // 補品牌名稱
                 for ($i = 0; $i < sizeof($list); $i++) {
-                    $bid = $list[$i]["bid"];
+                    $bid = $list[$i]["serno"];
                     $sqlstr = "SELECT brand FROM `brand` where serno={$bid}";
+                    $sqlary = array();
                     $list[$i]["brand"] = $g_db->getOne($sqlstr, $sqlary);
                 }
 
@@ -400,7 +401,7 @@ $category = $_GET['category'];
         </div>
         <!-- Content Body End -->
 
-        <?php require_once './tpl/footer.php' ?>
+        <?php ('./tpl/footer.php'); ?>
         <!-- Footer Section Start -->
         <!-- <div class="footer-section section position-static pt-30 pb-30 bg-grey">
             <div class="container-fluid">

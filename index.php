@@ -1,15 +1,4 @@
-<?
-
-ini_set('display_errors', 'On');
-define('Usable', true);
-
-//Define DIRECTORY_SEPARATOR
-if (!defined('DS')) {
-    define('DS', DIRECTORY_SEPARATOR);
-}
-
-include_once('./config.php');
-
+<?    ini_set('display_errors', 'On');  	define('Usable', true);	//Define DIRECTORY_SEPARATOR	if (!defined('DS')) {       define('DS', DIRECTORY_SEPARATOR);	}		include_once('config.php');
 $_PageShowNum = 12;
 if ($_PageShowNum == "" or $_PageShowNum == 0) {
     $_PageShowNum = 9;
@@ -327,7 +316,7 @@ $EndRec = $startuprow + $_PageShowNum;
 
 <body>
     <div class="main-wrapper p-0">
-        <?php require_once './tpl/headind.php' ?>
+        <?php include('tpl/head.php'); ?>
         <!--Main Slider Section Start-->
         <div class="section main-slider-1 bg-grey" style="position: relative;">
             <div class="container">

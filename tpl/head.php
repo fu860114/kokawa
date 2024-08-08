@@ -1,3 +1,14 @@
+<?
+    ini_set('display_errors', 'On');  
+	define('Usable', true);
+
+	//Define DIRECTORY_SEPARATOR
+	if (!defined('DS')) {
+       define('DS', DIRECTORY_SEPARATOR);
+	}
+	
+	include_once('config.php');
+?>	
 <!-- Header Section Start -->
 <div class="header-section section">
     <div class="container-fluid">
@@ -17,20 +28,15 @@
                         <li><a href="#">HOME</a></li>
 
                         <?
-                        $sqlstr = "SELECT * FROM `brand` where bid={$bid} order by showseries";
+                        //$sqlstr = "SELECT * FROM `brand` where bid={$bid} order by showseries";
+	                    $sqlstr = "SELECT * FROM `brand` order by showseries";
                         $sqlary = array();
                         $list = $g_db->getAll($sqlstr, $sqlary);
-                        // 補品牌名稱
-                        // for ($i = 0; $i < sizeof($list); $i++) {
-                        //     $bid = $list[$i]["bid"];
-                        //     $sqlstr = "SELECT brand FROM `brand` where serno={$bid}";
-                        //     $list[$i]["brand"] = $g_db->getOne($sqlstr, $sqlary);
-                        // }
-
-                        for ($i = 0; $i < sizeof($list); $i++) {
-                        ?>
-                            <li><a href="./personal-portfolio-collection.php?brand=<?= $list[$i]["id"]; ?>"></a><?= $list[$i]["name"]; ?></li>
-                        <?  }  ?>
+	                    for ($i=0; $i<sizeof($list); $i++) {
+                        ?>		
+	                       <li><a href="./personal-portfolio-collection.php?brand=<?=$list[$i]["serno"]; ?>"><?=$list[$i]["brandchinese"]; ?></a></li>
+                        <? } ?>
+						
                         <!-- <li><a href="#">RESIDENTIAL</a></li>
                         <li><a href="#">COMMERCIAL</a></li> -->
                         <li><a href="./contact.html">CONTACT</a></li>

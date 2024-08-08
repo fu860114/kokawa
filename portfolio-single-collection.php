@@ -32,6 +32,19 @@
     <!-- Modernizer JS -->
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
+<style>
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        .container {
+            max-width: 95vw;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .container {
+            width: 95vw;
+        }
+    }
+</style>
 
 <body>
 
@@ -44,7 +57,8 @@
 
                     <!-- Logo -->
                     <div class="header-logo col-lg-2 col-6 mt-40 mb-40">
-                        <a href="index.html"><img src="assets/images/logo.png" alt=""><img src="assets/images/light-logo.png" class="light-logo" alt=""></a>
+                        <a href="index.html"><img src="assets/images/logo.png" alt=""><img
+                                src="assets/images/light-logo.png" class="light-logo" alt=""></a>
                     </div>
 
                     <!-- Header Menu -->
@@ -62,7 +76,8 @@
                                     </ul>
                                 </li>
                                 <li><a href="about.html">ABOUT US</a></li>
-                                <li class="menu-item-has-children active"><a href="portfolio-five-column-full-width.html">PORTFOLIO</a>
+                                <li class="menu-item-has-children active"><a
+                                        href="portfolio-five-column-full-width.html">PORTFOLIO</a>
                                     <ul class="sub-menu">
                                         <li class="menu-item-has-children"><a href="#">Portfolio Grid</a>
                                             <ul class="sub-menu">
@@ -71,22 +86,31 @@
                                                 <li><a href="portfolio-three-column-box.html">Three Column Box</a></li>
                                                 <li><a href="portfolio-four-column-box.html">Four Column Box</a></li>
 
-                                                <li><a href="portfolio-three-column-full-width.html">Three Column Fullwidth</a></li>
-                                                <li><a href="portfolio-four-column-full-width.html">Four Column Fullwidth</a></li>
-                                                <li><a href="portfolio-five-column-full-width.html">Five Column Fullwidth</a></li>
+                                                <li><a href="portfolio-three-column-full-width.html">Three Column
+                                                        Fullwidth</a></li>
+                                                <li><a href="portfolio-four-column-full-width.html">Four Column
+                                                        Fullwidth</a></li>
+                                                <li><a href="portfolio-five-column-full-width.html">Five Column
+                                                        Fullwidth</a></li>
 
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children active"><a href="#">Portfolio Masonry</a>
                                             <ul class="sub-menu">
 
-                                                <li class="active"><a href="portfolio-two-column-masonry-box.html">Two Column Box</a></li>
-                                                <li><a href="portfolio-three-column-masonry-box.html">Three Column Box</a></li>
-                                                <li><a href="portfolio-four-column-masonry-box.html">Four Column Box</a></li>
+                                                <li class="active"><a href="portfolio-two-column-masonry-box.html">Two
+                                                        Column Box</a></li>
+                                                <li><a href="portfolio-three-column-masonry-box.html">Three Column
+                                                        Box</a></li>
+                                                <li><a href="portfolio-four-column-masonry-box.html">Four Column Box</a>
+                                                </li>
 
-                                                <li><a href="portfolio-three-column-masonry-full-width.html">Three Column Fullwidth</a></li>
-                                                <li><a href="portfolio-four-column-masonry-full-width.html">Four Column Fullwidth</a></li>
-                                                <li><a href="portfolio-five-column-masonry-full-width.html">Five Column Fullwidth</a></li>
+                                                <li><a href="portfolio-three-column-masonry-full-width.html">Three
+                                                        Column Fullwidth</a></li>
+                                                <li><a href="portfolio-four-column-masonry-full-width.html">Four Column
+                                                        Fullwidth</a></li>
+                                                <li><a href="portfolio-five-column-masonry-full-width.html">Five Column
+                                                        Fullwidth</a></li>
 
                                             </ul>
                                         </li>
@@ -104,10 +128,13 @@
                                 <li class="menu-item-has-children"><a href="blog-three-column.html">BLOG</a>
                                     <ul class="sub-menu">
                                         <li><a href="blog-three-column.html">Blog Three Column</a></li>
-                                        <li><a href="blog-two-column-left-sidebar.html">Blog two Column Left Sidebar</a></li>
-                                        <li><a href="blog-two-column-right-sidebar.html">Blog two Column Right Sidebar</a></li>
+                                        <li><a href="blog-two-column-left-sidebar.html">Blog two Column Left Sidebar</a>
+                                        </li>
+                                        <li><a href="blog-two-column-right-sidebar.html">Blog two Column Right
+                                                Sidebar</a></li>
                                         <li><a href="blog-details-left-sidebar.html">Blog Details Left Sidebar</a></li>
-                                        <li><a href="blog-details-right-sidebar.html">Blog Details Right Sidebar</a></li>
+                                        <li><a href="blog-details-right-sidebar.html">Blog Details Right Sidebar</a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li><a href="contact.html">CONTACT</a></li>
@@ -142,7 +169,8 @@
                 <button class="side-header-close d-block d-lg-none"><span></span></button>
                 <!-- Side Header Logo Start -->
                 <div class="side-header-logo pt-120 pt-lg-80 pt-md-80 pt-sm-80 pt-xs-50">
-                    <a href="index.html"><img src="assets/images/logo.png" alt=""><img src="assets/images/light-logo.png" class="light-logo" alt=""></a>
+                    <a href="index.html"><img src="assets/images/logo.png" alt=""><img
+                            src="assets/images/light-logo.png" class="light-logo" alt=""></a>
                 </div>
                 <!-- Side Header Logo End -->
 
@@ -161,7 +189,8 @@
                                 </ul>
                             </li>
                             <li><a href="about.html">ABOUT US</a></li>
-                            <li class="menu-item-has-children active"><a href="portfolio-five-column-full-width.html">PORTFOLIO</a>
+                            <li class="menu-item-has-children active"><a
+                                    href="portfolio-five-column-full-width.html">PORTFOLIO</a>
                                 <ul class="side-sub-menu">
                                     <li class="menu-item-has-children"><a href="#">Portfolio Grid</a>
                                         <ul class="side-sub-menu">
@@ -170,22 +199,31 @@
                                             <li><a href="portfolio-three-column-box.html">Three Column Box</a></li>
                                             <li><a href="portfolio-four-column-box.html">Four Column Box</a></li>
 
-                                            <li><a href="portfolio-three-column-full-width.html">Three Column Fullwidth</a></li>
-                                            <li><a href="portfolio-four-column-full-width.html">Four Column Fullwidth</a></li>
-                                            <li><a href="portfolio-five-column-full-width.html">Five Column Fullwidth</a></li>
+                                            <li><a href="portfolio-three-column-full-width.html">Three Column
+                                                    Fullwidth</a></li>
+                                            <li><a href="portfolio-four-column-full-width.html">Four Column
+                                                    Fullwidth</a></li>
+                                            <li><a href="portfolio-five-column-full-width.html">Five Column
+                                                    Fullwidth</a></li>
 
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children active"><a href="#">Portfolio Masonry</a>
                                         <ul class="side-sub-menu">
 
-                                            <li class="active"><a href="portfolio-two-column-masonry-box.html">Two Column Box</a></li>
-                                            <li><a href="portfolio-three-column-masonry-box.html">Three Column Box</a></li>
-                                            <li><a href="portfolio-four-column-masonry-box.html">Four Column Box</a></li>
+                                            <li class="active"><a href="portfolio-two-column-masonry-box.html">Two
+                                                    Column Box</a></li>
+                                            <li><a href="portfolio-three-column-masonry-box.html">Three Column Box</a>
+                                            </li>
+                                            <li><a href="portfolio-four-column-masonry-box.html">Four Column Box</a>
+                                            </li>
 
-                                            <li><a href="portfolio-three-column-masonry-full-width.html">Three Column Fullwidth</a></li>
-                                            <li><a href="portfolio-four-column-masonry-full-width.html">Four Column Fullwidth</a></li>
-                                            <li><a href="portfolio-five-column-masonry-full-width.html">Five Column Fullwidth</a></li>
+                                            <li><a href="portfolio-three-column-masonry-full-width.html">Three Column
+                                                    Fullwidth</a></li>
+                                            <li><a href="portfolio-four-column-masonry-full-width.html">Four Column
+                                                    Fullwidth</a></li>
+                                            <li><a href="portfolio-five-column-masonry-full-width.html">Five Column
+                                                    Fullwidth</a></li>
 
                                         </ul>
                                     </li>
@@ -203,8 +241,10 @@
                             <li class="menu-item-has-children"><a href="blog-three-column.html">BLOG</a>
                                 <ul class="side-sub-menu">
                                     <li><a href="blog-three-column.html">Blog Three Column</a></li>
-                                    <li><a href="blog-two-column-left-sidebar.html">Blog two Column Left Sidebar</a></li>
-                                    <li><a href="blog-two-column-right-sidebar.html">Blog two Column Right Sidebar</a></li>
+                                    <li><a href="blog-two-column-left-sidebar.html">Blog two Column Left Sidebar</a>
+                                    </li>
+                                    <li><a href="blog-two-column-right-sidebar.html">Blog two Column Right Sidebar</a>
+                                    </li>
                                     <li><a href="blog-details-left-sidebar.html">Blog Details Left Sidebar</a></li>
                                     <li><a href="blog-details-right-sidebar.html">Blog Details Right Sidebar</a></li>
                                 </ul>
@@ -236,7 +276,8 @@
                         <p>&copy;
                             <script>
                                 document.write(new Date().getFullYear() + ' ');
-                            </script> MINIMAU. ALL RIGHT RESERVED</p>
+                            </script> MINIMAU. ALL RIGHT RESERVED
+                        </p>
                     </div>
 
                 </div>
@@ -250,7 +291,8 @@
 
         <!-- Content Body Start -->
         <div class="content-body bg-grey section custom-scroll">
-            <div class="section-wrap section pt-120 pt-lg-80 pt-md-80 pt-sm-80 pt-xs-50 pb-120 pb-lg-80 pb-md-80 pb-sm-80 pb-xs-50">
+            <div
+                class="section-wrap section pt-120 pt-lg-80 pt-md-80 pt-sm-80 pt-xs-50 pb-120 pb-lg-80 pb-md-80 pb-sm-80 pb-xs-50">
                 <div class="container">
 
                     <div class="row row-7 portfolio-column-two masonry-grid">
@@ -511,10 +553,13 @@
                         <p>&copy;
                             <script>
                                 document.write(new Date().getFullYear() + ' ');
-                            </script> MINIMAU. ALL RIGHT RESERVED</p>
+                            </script> MINIMAU. ALL RIGHT RESERVED
+                        </p>
                     </div>
 
-                    <div class="col-lg-4 col-12 d-flex justify-content-center order-lg-2 order-1 mb-sm-15 mb-xs-15"><button class="load-more-btn">LOAD MORE...</button></div>
+                    <div class="col-lg-4 col-12 d-flex justify-content-center order-lg-2 order-1 mb-sm-15 mb-xs-15">
+                        <button class="load-more-btn">LOAD MORE...</button>
+                    </div>
 
                     <div class="footer-search col-lg-4 col-12 order-lg-3 order-2 mb-sm-15 mb-xs-15">
                         <form action="#">
