@@ -29,7 +29,6 @@
 	$twig->addGlobal('document_path', "作品集");
 	$twig->addGlobal('cur_file', basename(__file__));
 
-
 	/*------------------------------------------------------------------------------------------------------------*/
 	//-- 編輯
 	/*------------------------------------------------------------------------------------------------------------*/
@@ -81,7 +80,6 @@
 		$data["bid"] =  $_POST["bid"];
 		$data["showseries"]  = $_POST["showseries"];
 		$data["material"]  = $_POST["material"];
-		$data["category"]  = $_POST["category"];
 
 		if ($_FILES["iconpic"]["name"] != "") {
 			$data['iconpic'] = "product-" . date("Ymdhis") . substr($_FILES["iconpic"]["name"], strrpos($_FILES["iconpic"]["na me"], '.'));
@@ -145,14 +143,23 @@
 		$sqlstr = "select * from {$_Table_Main} ";
 		$list = $g_db->getAll($sqlstr);
 
-		$categorysqlstr = "select * from 'brand' ";
-		$categorylist = $g_db->getAll($categorysqlstr);
+		$bidsqlstr = "select * from 'brand' ";
+		$bidlist = $g_db->getAll($bidsqlstr);
+
+
+		echo "STOP2";
+		die();
 
 		//補名稱
 		for ($i = 0; $i < sizeof($list); $i++) {
+			$gid = $list[$i]["bid"];
+			$sqlstr = "SELECT brandchinese	 FROM `brand` where serno={$bid}";
+			$list[$i]["bidname"] = $g_db->getOne($sqlstr);
+		}
+		for ($i = 0; $i < sizeof($list); $i++) {
 			$bid = $list[$i]["bid"];
 			$sqlstr = "SELECT brand FROM `brand` where serno={$bid}";
-			$list[$i]["brand"] = $g_db->getOne($sqlstr, $sqlary);
+			$list[$i]["brand"] = $g_db->getOne($sqlstr);
 		}
 		$twig->addGlobal('list', $list);
 
