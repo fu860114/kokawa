@@ -156,11 +156,11 @@
 			$sqlstr = "SELECT brandchinese FROM `brand` where serno={$bid}";
 			$list[$i]["bidname"] = $g_db->getOne($sqlstr);
 		}
-		for ($i = 0; $i < sizeof($list); $i++) {
-			$bid = $list[$i]["bid"];
-			$sqlstr = "SELECT brand FROM `brand` where serno={$bid}";
-			$list[$i]["brand"] = $g_db->getOne($sqlstr);
-		}
+		// for ($i = 0; $i < sizeof($list); $i++) {
+		// 	$bid = $list[$i]["bid"];
+		// 	$sqlstr = "SELECT brand FROM `brand` where serno={$bid}";
+		// 	$list[$i]["brand"] = $g_db->getOne($sqlstr);
+		// }
 		$twig->addGlobal('list', $list);
 
 		// echo '<pre>' . var_export($list, true) . '</pre>';
