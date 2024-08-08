@@ -143,7 +143,7 @@
 		$sqlstr = "select * from {$_Table_Main} ";
 		$list = $g_db->getAll($sqlstr);
 
-		$bidsqlstr = "select * from 'brand' ";
+		$bidsqlstr = "select * from {$_Table_Main} ";
 		$bidlist = $g_db->getAll($bidsqlstr);
 
 		echo $bidlist;
