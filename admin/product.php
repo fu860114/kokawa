@@ -143,16 +143,16 @@
 		$sqlstr = "select * from {$_Table_Main} ";
 		$list = $g_db->getAll($sqlstr);
 
-		$bidsqlstr = "select * from {$_Table_Main} ";
+		$bidsqlstr = "select * from 'brand' ";
 		$bidlist = $g_db->getAll($bidsqlstr);
 
-		echo $bidlist;
-		echo "STOP2";
-		die();
+		// echo $bidlist;
+		// echo "STOP2";
+		// die();
 
 		//補名稱
 		for ($i = 0; $i < sizeof($list); $i++) {
-			$gid = $list[$i]["bid"];
+			$bid = $list[$i]["bid"];
 			$sqlstr = "SELECT brandchinese	 FROM `brand` where serno={$bid}";
 			$list[$i]["bidname"] = $g_db->getOne($sqlstr);
 		}
