@@ -153,7 +153,7 @@
 		//補名稱
 		for ($i = 0; $i < sizeof($list); $i++) {
 			$bid = $list[$i]["bid"];
-			$sqlstr = "SELECT brandchinese	 FROM `brand` where serno={$bid}";
+			$sqlstr = "SELECT brandchinese FROM `brand` where serno={$bid}";
 			$list[$i]["bidname"] = $g_db->getOne($sqlstr);
 		}
 		for ($i = 0; $i < sizeof($list); $i++) {

@@ -41,7 +41,7 @@
                     <div class="form-group">
                         <label for="a" class="col-xs-12 col-sm-3 control-label">分類</label>
                         <div class="col-sm-8 col-lg-6 col-xs-12">
-                            <select class="form-control" name="category" style="padding-left: 15px;">
+                            <select class="form-control" name="bid" style="padding-left: 15px;">
                                 <option value=0>請選擇</option>
                                 {% for pdata in pdlist %}
                                 <option value="{{ pdata.serno }}" {% if pdata.serno==data.brand %}selected{% endif %}>{{
