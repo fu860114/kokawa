@@ -147,8 +147,8 @@
 		$bidlist = $g_db->getAll($bidsqlstr);
 
 
-		echo "STOP2";
-		die();
+		// echo "STOP2";
+		// die();
 
 		//補名稱
 		for ($i = 0; $i < sizeof($list); $i++) {
