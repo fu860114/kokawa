@@ -147,8 +147,6 @@
 		$bidlist = $g_db->getAll($bidsqlstr);
 
 
-		// echo "STOP2";
-		// die();
 
 		//補名稱
 		for ($i = 0; $i < sizeof($list); $i++) {
@@ -162,6 +160,10 @@
 			$list[$i]["brand"] = $g_db->getOne($sqlstr);
 		}
 		$twig->addGlobal('list', $list);
+
+		echo "STOP2";
+		die();
+
 
 		// echo '<pre>' . var_export($list, true) . '</pre>';
 		// die();
