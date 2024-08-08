@@ -146,7 +146,7 @@
 		$bidsqlstr = "select * from 'brand' ";
 		$bidlist = $g_db->getAll($bidsqlstr);
 
-
+		echo $bidlist;
 		echo "STOP2";
 		die();
 
