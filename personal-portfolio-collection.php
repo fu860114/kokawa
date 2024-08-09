@@ -23,8 +23,7 @@ $pageno = $CurrentPageNO - 1;
 
 $startuprow = $pageno * $_PageShowNum;
 $EndRec = $startuprow + $_PageShowNum;
-$bid = $_GET['bid'];
-
+$bid = $_GET['brand'];
 
 ?>
 
@@ -332,7 +331,7 @@ $bid = $_GET['bid'];
         <div class="section pt-120 pt-lg-80 pt-md-80 pt-sm-80 pt-xs-50 pb-120 pb-lg-80 pb-md-80 pb-sm-80 pb-xs-50 bg-grey" style="padding-top: 40vh!important;">
             <div class="container">
                 <?
-                $sqlstr = "SELECT * FROM `brand` where serno={$bid} order by showseries";
+                $sqlstr = "SELECT * FROM `product` where bid={$bid} order by showseries";
                 // if ($bid === "0") {
                 //     $sqlstr = "SELECT * FROM `product` order by showseries";
                 // }
@@ -340,14 +339,20 @@ $bid = $_GET['bid'];
                 $list = $g_db->getAll($sqlstr, $sqlary);
                 // 補品牌名稱
                 for ($i = 0; $i < sizeof($list); $i++) {
-                    $bid = $list[$i][""];
+                    $bid = $list[$i]["bid"];
                     $sqlstr = "SELECT brand FROM `brand` where serno={$bid}";
+                    $sqlstrchinese = "SELECT brandchinese FROM `brand` where serno={$bid}";
+
                     $sqlary = array();
+                    $sqlarychinese = array();
+
                     $list[$i]["brand"] = $g_db->getOne($sqlstr, $sqlary);
+                    $list[$i]["brandchinese"] = $g_db->getOne($sqlstrchinese, $sqlarychinese);
                 }
 
                 for ($i = 0; $i < sizeof($list); $i++) {
                 ?>
+                    <!-- 頁面tilte -->
                     <div class="row" style="margin-bottom: 60px;">
                         <div class="col-12">
                             <div class="section-title text-center mb-40">
@@ -360,19 +365,15 @@ $bid = $_GET['bid'];
 
                 <div class="row portfolio-column-four mb-40">
                     <?
-                    $sqlstr = "SELECT * FROM `product` where category={$category} order by showseries";
-
-                    // if ($bid === "0") {
-                    //     $sqlstr = "SELECT * FROM `product` order by showseries";
-                    // }
+                    $sqlstr = "SELECT * FROM `product` where bid={$bid} order by showseries";
                     $sqlary = array();
                     $list = $g_db->getAll($sqlstr, $sqlary);
                     // 補品牌名稱
-                    for ($i = 0; $i < sizeof($list); $i++) {
-                        $bid = $list[$i]["bid"];
-                        $sqlstr = "SELECT brand FROM `brand` where serno={$bid}";
-                        $list[$i]["brand"] = $g_db->getOne($sqlstr, $sqlary);
-                    }
+                    // for ($i = 0; $i < sizeof($list); $i++) {
+                    //     $bid = $list[$i]["bid"];
+                    //     $sqlstr = "SELECT brand FROM `brand` where serno={$bid}";
+                    //     $list[$i]["brand"] = $g_db->getOne($sqlstr, $sqlary);
+                    // }
 
                     for ($i = 0; $i < sizeof($list); $i++) {
                     ?>
@@ -382,10 +383,6 @@ $bid = $_GET['bid'];
                                 <a href="portfolio-details.html" class="portfolio-image">
                                     <img src="assets/images/<?= $list[$i]["iconpic"]; ?>" class="design-work" alt="">
                                 </a>
-                                <!-- <div class="portfolio-content">
-                                <h4 class="title"><a href="portfolio-details.html">Oil Paint Dog</a></h4>
-                                <span class="category"><a href="#">Design</a></span>
-                            </div> -->
                                 <div style="margin-top: 15px;">
                                     <h4 class="text-end h5-color fw200"><?= $list[$i]["name"]; ?></h4>
                                     <h4 class="text-end h5-color fw200"><?= $list[$i]["material"]; ?></h4>
@@ -396,6 +393,8 @@ $bid = $_GET['bid'];
                             <div class="work-div-shadow"></div>
                         </div>
                     <?  }  ?>
+
+
                 </div>
             </div>
         </div>
