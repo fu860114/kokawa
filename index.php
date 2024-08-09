@@ -1,4 +1,5 @@
-<?    ini_set('display_errors', 'On');  	define('Usable', true);	//Define DIRECTORY_SEPARATOR	if (!defined('DS')) {       define('DS', DIRECTORY_SEPARATOR);	}		include_once('config.php');
+<? ini_set('display_errors', 'On');
+define('Usable', true);    //Define DIRECTORY_SEPARATOR	if (!defined('DS')) {       define('DS', DIRECTORY_SEPARATOR);	}		include_once('config.php');
 $_PageShowNum = 12;
 if ($_PageShowNum == "" or $_PageShowNum == 0) {
     $_PageShowNum = 9;
@@ -244,7 +245,7 @@ $EndRec = $startuprow + $_PageShowNum;
 
 
         .design-work {
-            object-fit: contain;
+            /* object-fit: contain; */
         }
 
         @-webkit-keyframes fadeInOut {
@@ -404,6 +405,24 @@ $EndRec = $startuprow + $_PageShowNum;
                 <div class="row portfolio-column-four mb-40">
                     <!-- Portfolio Item -->
                     <div class="col-12 work-div">
+
+                        <!-- <?
+                                $sqlstr = "SELECT * FROM `product` where bid={$bid} order by showseries";
+
+                                if ($bid === "0") {
+                                    $sqlstr = "SELECT * FROM `product` order by showseries";
+                                }
+                                $sqlary = array();
+                                $list = $g_db->getAll($sqlstr, $sqlary);
+                                // 補品牌名稱
+                                for ($i = 0; $i < sizeof($list); $i++) {
+                                    $bid = $list[$i]["bid"];
+                                    $sqlstr = "SELECT brand FROM `brand` where serno={$bid}";
+                                    $list[$i]["brand"] = $g_db->getOne($sqlstr, $sqlary);
+                                }
+
+                                for ($i = 0; $i < sizeof($list); $i++) {
+                                ?> -->
                         <div class="portfolio-item">
                             <a href="portfolio-details.html" class="portfolio-image">
                                 <img src="assets/images/interior-design.jpeg" class="design-work" alt="">
@@ -418,8 +437,11 @@ $EndRec = $startuprow + $_PageShowNum;
                             </div>
                             <!-- <div class="work-shadow"></div> -->
                         </div>
-
                         <div class="work-div-shadow"></div>
+
+                        <!-- <?  }  ?> -->
+
+
                     </div>
                 </div>
 
