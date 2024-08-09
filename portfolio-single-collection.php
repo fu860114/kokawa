@@ -44,6 +44,10 @@
             width: 95vw;
         }
     }
+
+    .main-wrapper {
+        padding-top: 0px;
+    }
 </style>
 
 <body>
@@ -53,7 +57,7 @@
         <?php include('./tpl/head.php'); ?>
 
         <!-- Content Body Start -->
-        <div class="content-body bg-grey section custom-scroll">
+        <div class="content-body section custom-scroll">
             <div class="section-wrap section pt-120 pt-lg-80 pt-md-80 pt-sm-80 pt-xs-50 pb-120 pb-lg-80 pb-md-80 pb-sm-80 pb-xs-50">
                 <div class="container">
 
