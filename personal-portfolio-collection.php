@@ -25,6 +25,7 @@ $startuprow = $pageno * $_PageShowNum;
 $EndRec = $startuprow + $_PageShowNum;
 $bid = $_GET['brand'];
 echo $bid;
+die();
 
 ?>
 
